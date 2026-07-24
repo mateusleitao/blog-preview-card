@@ -1,6 +1,111 @@
-:root{
-    --background-color: hsl(47, 88%, 63%);
-    --card-color: hsl(0, 0%, 100%);
-    --big-font-color: hsl(0, 0%, 42%);
-    --font-color: hsl(0, 0%, 7%);
+:root {
+  --background-color: hsl(47, 88%, 63%);
+  --card-color: hsl(0, 0%, 100%);
+  --big-font-color: hsl(0, 0%, 42%);
+  --font-color: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Figtree Medium";
+  src: url(/assets/fonts/static/Figtree-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree ExtraBold";
+  src: url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Figtree Variable";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 300 900;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: var(--card-color);
+  padding-inline: 24px;
+  padding-block: 24px;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+
+.container img {
+  border-radius: 10px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  width: 336px;
+}
+
+.stageTag {
+  font-family: "Figtree Variable";
+  font-weight: 800;
+  font-size: 14px;
+  background-color: var(--background-color);
+  padding-inline: 12px;
+  padding-block: 7px;
+  border-radius: 4px;
+}
+
+.publishDate {
+  font-family: "Figtree Medium";
+  font-size: 14px;
+}
+
+.bigFont {
+  font-family: "Figtree ExtraBold";
+  font-size: 24px;
+}
+
+.bigFont:hover{
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+
+.smallFont {
+  font-family: "Figtree Medium";
+  font-size: 16px;
+}
+
+.nickname {
+  font-family: "Figtree ExtraBold";
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nickname img {
+  margin-right: 12px;
+  height: 32px;
+  width: 32px;
+}
+
+.attribution{
+  margin-top: 30px;
 }
